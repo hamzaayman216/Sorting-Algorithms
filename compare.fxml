@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="544.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TestController">
+    <children>
+        <RadioButton fx:id="insertion" layoutX="47.0" layoutY="93.0" mnemonicParsing="false" text="Insertion" />
+        <LineChart fx:id="chartCompare" layoutX="29.0" layoutY="119.0" prefHeight="680.0" prefWidth="1000.0">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <TextField fx:id="arrSize" layoutX="117.0" layoutY="33.0" promptText="Array Size" />
+        <TextField fx:id="Steps" layoutX="367.0" layoutY="33.0" promptText="Steps" />
+      <Button layoutX="596.0" layoutY="33.0" mnemonicParsing="false" onAction="#ShowPressed" text="show" />
+      <RadioButton fx:id="quick" layoutX="592.0" layoutY="93.0" mnemonicParsing="false" text="Quick" />
+      <RadioButton fx:id="merge" layoutX="274.0" layoutY="93.0" mnemonicParsing="false" text="Merge" />
+      <RadioButton fx:id="heap" layoutX="126.0" layoutY="93.0" mnemonicParsing="false" text="Heap" />
+      <RadioButton fx:id="radix" layoutX="517.0" layoutY="93.0" mnemonicParsing="false" text="Radix" />
+      <RadioButton fx:id="counting" layoutX="350.0" layoutY="93.0" mnemonicParsing="false" text="Counting" />
+      <RadioButton fx:id="bubble" layoutX="434.0" layoutY="93.0" mnemonicParsing="false" text="Bubble" />
+      <RadioButton fx:id="selection" layoutX="192.0" layoutY="93.0" mnemonicParsing="false" text="Selection" />
+      <Button layoutX="680.0" layoutY="33.0" mnemonicParsing="false" onAction="#PressBack1" text="back" />
+    </children>
+</AnchorPane>

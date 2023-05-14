@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="576.0" maxWidth="922.0" minHeight="-800" minWidth="-Infinity" prefHeight="576.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TestController">
+   <children>
+      <Button layoutX="1.0" layoutY="70.0" mnemonicParsing="false" onAction="#insertionPressed" text="Insertion" />
+      <Button layoutX="1.0" layoutY="121.0" mnemonicParsing="false" onAction="#mergePressed" text="Merge" />
+      <Button layoutY="174.0" mnemonicParsing="false" onAction="#heapPressed" text="Heap" />
+      <Button layoutX="-1.0" layoutY="226.0" mnemonicParsing="false" onAction="#quickPressed" text="Quick" />
+      <Button layoutX="-1.0" layoutY="320.0" mnemonicParsing="false" onAction="#countingPressed" text="Counting" />
+      <Button layoutY="275.0" mnemonicParsing="false" onAction="#radixPressed" text="Radix" />
+      <TextField fx:id="ArraySize" layoutX="207.0" layoutY="57.0" promptText="ArraySize" />
+      <TextField fx:id="S" layoutX="440.0" layoutY="57.0" promptText="Steps" />
+      <LineChart fx:id="chartIndividual" layoutX="119.0" layoutY="101.0" prefHeight="682.0" prefWidth="989.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="701.0" layoutY="57.0" mnemonicParsing="false" onAction="#PressBack1" text="back" />
+      <Button layoutY="367.0" mnemonicParsing="false" onAction="#bubblePressed" text="Bubble" />
+      <Button layoutY="416.0" mnemonicParsing="false" onAction="#selectionPressed" text="selection" />
+      <Button layoutX="80.0" layoutY="70.0" mnemonicParsing="false" onAction="#bigPressed" text="o(n^2)" />
+      <Button layoutX="70.0" layoutY="121.0" mnemonicParsing="false" onAction="#logPressed" text="o(nlogn)" />
+      <Button layoutX="70.0" layoutY="174.0" mnemonicParsing="false" onAction="#logPressed" text="o(nlogn)" />
+      <Button layoutX="80.0" layoutY="367.0" mnemonicParsing="false" onAction="#bigPressed" text="o(n^2)" />
+      <Button layoutX="80.0" layoutY="416.0" mnemonicParsing="false" onAction="#bigPressed" text="o(n^2)" />
+      <Button layoutX="80.0" layoutY="226.0" mnemonicParsing="false" onAction="#bigPressed" text="o(n^2)" />
+      <Button layoutX="88.0" layoutY="275.0" mnemonicParsing="false" onAction="#nkPressed" text="o(nk)" />
+      <Button layoutX="80.0" layoutY="320.0" mnemonicParsing="false" onAction="#npluskPressed" text="o(n+k)" />
+   </children>
+</AnchorPane>
